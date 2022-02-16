@@ -1,0 +1,106 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "open Sans";
+    
+    
+}
+
+
+form div.single-input h1{
+
+    margin-top: -30px;
+    text-align:center;
+    font-size: 24px;
+    color: violet;
+    
+
+}
+
+form{
+
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    box-shadow: 0 0 5px violet;
+    padding: 30px 4%;
+}
+
+form div.single-input{
+
+    position: relative;
+    margin: 30px 0;
+    
+    
+}
+
+form div.single-input label{
+
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    color: violet;
+    cursor: text;
+    transition: all 0.5s ease-in-out;
+
+}
+
+form div.single-input .input{
+
+    width: 100%;
+    padding: 5px;
+    border: 0;
+    border-bottom: 2px solid violet;
+    outline: 0;
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: none;
+
+
+}
+
+form div.single-input .input:focus,
+form div.single-input .input:valid{
+
+    border-bottom: 2px solid cornflowerblue;
+    
+
+}
+
+form div.single-input .input:focus ~ label,
+form div.single-input .input:valid ~ label{
+
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: cornflowerblue;
+
+}
+
+
+
+input[type="submit"] {
+
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 10px;
+    color: white;
+    background-color: violet;
+    cursor: pointer;
+
+}
+
+input[type="submit"]:hover {
+
+    background-color: rgb(228, 86, 228);
+    transition: .3s;
+}

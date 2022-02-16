@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+#form-home{
+
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    box-shadow: 0 0 5px violet;
+    padding: 30px 4%;
+    text-align: center;
+    
+
+}
+
+
+
+
+
+
+nav{
+
+    background: rgb(197, 91, 197);
+    height:  80px;
+    width: 100%;
+}
+
+.logo{
+
+    
+   
+   margin: 12px 15px;
+    width: 56px;
+    height: 56px; 
+    float: left;   
+    background: url(../image/logo.jpeg) center center/56px ;
+    font-size: 0;   
+    border-radius: 50%;
+
+}
+
+.ul-principal {
+
+    float: right;
+    margin-right: 20px;   
+
+
+}
+
+.lista {
+    
+    float: left;
+    line-height: 80px;
+    margin: 0px 5px;     
+    list-style: none;
+    display: inline-block;
+    
+
+}
+
+nav ul li ul {
+
+    background: blue;
+    display: none;
+    
+}
+
+a {
+
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 17px;
+    margin:0 8px;
+    padding: 0px 12px;   
+    text-transform: uppercase;
+
+    
+    
+}
+
+nav ul li ul li a{
+
+    text-decoration: none;
+    color: white;
+    display: block;  
+    padding: 0px 8px;   
+    text-transform: uppercase;
+    font-size: 12px; 
+}
+
+a:active, a:hover {
+
+    background: violet;
+    color: rgb(12, 11, 12);
+}
+
+.checkbtn {
+
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#form-sched.Active{
+
+    display: block;
+}
+
+
+#check {
+
+    display: none;
+}
+
+
+@media (max-width: 858px) {
+
+
+    body{
+
+        background-position-y:80px ;
+        background: cover;
+
+    }
+
+    .checkbtn{
+        display: block;
+        color: rgb(245, 236, 236);        
+    }
+
+    .ul-principal{
+
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 80px);  
+        top: 80px;
+        left: -100%;
+        background: black;
+        text-align: center; 
+        transition: all .5s;   
+        overflow-y: scroll;  
+        z-index: 1;     
+       
+
+    }
+
+    .lista{
+
+        display: block;
+        margin: 50px 0;
+        line-height: 50px;
+        float: none;
+    }
+
+    a{
+
+        padding: 20px 40%;
+    }
+   
+    .ul-principal::-webkit-scrollbar{
+
+        width: 12px;
+        border: 1px solid rgb(80, 20, 80);
+        border-radius: 8px;        
+        
+    }
+
+    .ul-principal::-webkit-scrollbar-thumb{
+
+        background-color: rgb(151, 33, 151);
+        border-radius: 8px;        
+
+    }
+    
+    .ul-cad, .ul-relat, .ul-serv {
+
+        background: violet;
+        display: none;
+        
+    
+    }
+
+   
+
+    #check:checked ~ ul {
+
+        left: 0;
+
+    }
+    a:active, a:hover {
+
+        background: violet;
+        color: rgb(12, 11, 12);
+    }
+    
+
+}
+
+

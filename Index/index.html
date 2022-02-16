@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início | DA Beauty Face</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="shortcut icon" href="../image/apple-touch-icon.png">       
+    <link rel="javascript" href="../Index/index.js">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../Schedule/schedule.css">
+    <link rel="stylesheet" href="../Register/register.css">
+    <link rel="logo" href="../image/logo.jpeg">
+    
+</head>
+
+<body>    
+
+    <nav>
+
+        <input type="checkbox" id ="check">
+        <label for="check" class="checkbtn">&#9776;</label>
+        </label>            
+        <label class = "imglogo"><h1 class="logo"> logo </h1> </label>
+        <ul class="ul-principal">
+
+            <li class="lista"> 
+                
+                    <a  onclick = "home(); return false" href="a" id="home">Início</a> 
+                
+            </li>
+
+            <li class="lista">
+                
+                     <a href="#" id="schedule">Agenda</a>
+                
+            </li>
+
+            <li class="lista">             
+            
+                <a href="#"  class="register" >Cadastro</a>
+                    <ul class="ul-cad">
+                        <li><a href="">Cliente</a></li>
+                        <li><a href="">Produto</a></li>
+                        <li><a href="">Serviço</a></li>
+                    </ul>
+            
+            </li>
+
+            <li class="lista"> 
+
+                <a href="#"class="relat" >Relatórios</a>
+                    <ul class="ul-relat">
+                        <li><a href="">Clientes</a></li>
+                        <li><a href="">Produtos</a></li>
+                        <li><a href="">Serviços</a></li>
+                        <li><a href="">Agenda</a></li>
+                    </ul>
+            </li>
+           
+            <li class="lista"> <a href="a">Sobre</a></li>
+
+            <li class="lista"> <a onclick = "out(); return false" href="a">Sair</a></li>
+            
+
+            
+
+        </ul>
+
+
+
+
+    </nav>
+
+    <div id ="form-home">
+
+        <h1>Seja bem Vindo!!!</h1>
+
+    </div>
+
+    <div id="form-sched">
+
+        
+        <h1>Agenda</h1>
+
+        
+
+        <input onclick="" type="submit" value ="Ok"> 
+
+
+    </div>
+
+    <div id="form-cad">
+
+        <div class="single-input">
+
+            <h1>Cadastro de Clientes</h1>
+    
+        </div>
+    
+         <div class="single-input">
+    
+            <input type="text" class="input" id="nome"required/>
+            <label for="nome">Nome</label>
+                
+        </div>
+    
+        <div class="single-input">
+    
+            <input type="tel" class="input" id="fone" required>
+            <label for="fone">Telefone</label>
+                
+        </div>
+
+        <div class="single-input">
+    
+            <input type="text" class="input" id="dataNasc" required>
+            <label for="dataNasc">Data de Nascimento</label>
+                
+        </div>
+    
+        <input type="submit" value ="Salvar"> 
+        <input type="reset" value ="Cancelar"> 
+
+    </div>
+
+    <script src="index.js">
+
+        $(#fone).mask
+    </script>
+    
+</body>
+</html>
